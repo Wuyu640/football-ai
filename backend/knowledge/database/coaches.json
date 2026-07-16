@@ -1,0 +1,21 @@
+{
+  "Hansi Flick": {
+    "style": "High Press",
+    "preferred_system": "4-3-3",
+    "pressing": 9,
+    "possession": 9,
+    "flexibility": 8,
+    "risk": 8,
+    "game_management": 7
+  },
+
+  "Xabi Alonso": {
+    "style": "Vertical",
+    "preferred_system": "3-4-2-1",
+    "pressing": 7,
+    "possession": 8,
+    "flexibility": 9,
+    "risk": 8,
+    "game_management": 8
+  }
+}

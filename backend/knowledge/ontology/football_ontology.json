@@ -1,0 +1,33 @@
+{
+  "high_press": {
+    "creates": [
+      "high_recoveries",
+      "opponent_errors"
+    ],
+    "improves": [
+      "high_xg"
+    ],
+    "risks": [
+      "space_behind"
+    ]
+  },
+
+  "low_block": {
+    "creates": [
+      "few_spaces"
+    ],
+    "reduces": [
+      "tempo",
+      "shots"
+    ]
+  },
+
+  "high_line": {
+    "creates": [
+      "offside_traps"
+    ],
+    "risks": [
+      "fast_transitions"
+    ]
+  }
+}

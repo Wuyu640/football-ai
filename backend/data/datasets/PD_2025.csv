@@ -1,0 +1,381 @@
+home,away,elo_difference,goal_difference,defense_difference,form_difference,result
+Girona FC,Rayo Vallecano de Madrid,-49.8,-0.5,-0.2,-0.4,away
+Villarreal CF,Real Oviedo,157.1,1.3,0.3,0.3,home
+RCD Mallorca,FC Barcelona,-195.0,-0.4,-0.4,-0.4,away
+Deportivo Alavés,Levante UD,-4.1,0.1,-0.3,-0.2,home
+Valencia CF,Real Sociedad de Fútbol,27.2,0.0,0.6,0.4,draw
+RC Celta de Vigo,Getafe CF,20.0,0.6,-0.9,-0.1,away
+Athletic Club,Sevilla FC,-2.6,0.4,-0.5,-0.1,home
+RCD Espanyol de Barcelona,Club Atlético de Madrid,-91.1,-0.7,0.6,-0.2,home
+Elche CF,Real Betis Balompié,-77.1,-0.3,0.1,0.1,draw
+Real Madrid CF,CA Osasuna,178.6,0.6,0.4,0.4,home
+Real Betis Balompié,Deportivo Alavés,75.1,-0.2,0.5,0.0,home
+RCD Mallorca,RC Celta de Vigo,-50.3,-0.1,0.5,0.0,draw
+Club Atlético de Madrid,Elche CF,81.2,0.2,-0.7,-0.1,draw
+Levante UD,FC Barcelona,-182.7,-0.1,-0.7,-0.2,away
+CA Osasuna,Valencia CF,-59.3,-0.5,-0.2,-0.3,home
+Real Sociedad de Fútbol,RCD Espanyol de Barcelona,19.5,0.8,-0.6,-0.1,draw
+Villarreal CF,Girona FC,100.2,1.3,-0.1,0.4,home
+Real Oviedo,Real Madrid CF,-218.2,-0.9,-0.5,-0.4,away
+Athletic Club,Rayo Vallecano de Madrid,-58.0,0.0,-0.8,-0.2,home
+Sevilla FC,Getafe CF,-34.7,0.0,-0.5,-0.1,away
+RC Celta de Vigo,Real Betis Balompié,-33.0,-0.1,-0.4,0.0,draw
+Elche CF,Levante UD,-6.1,-0.4,0.3,-0.1,home
+Valencia CF,Getafe CF,12.8,0.7,-0.5,0.0,home
+Deportivo Alavés,Club Atlético de Madrid,-79.3,0.3,0.1,0.0,draw
+Real Oviedo,Real Sociedad de Fútbol,-71.7,-0.8,0.3,0.1,home
+Girona FC,Sevilla FC,5.6,-0.1,0.1,-0.3,away
+Real Madrid CF,RCD Mallorca,162.5,0.3,0.1,0.2,home
+RC Celta de Vigo,Villarreal CF,-51.1,-0.6,-0.4,-0.1,draw
+Real Betis Balompié,Athletic Club,90.3,0.3,0.5,0.1,away
+RCD Espanyol de Barcelona,CA Osasuna,12.6,-0.3,0.2,0.0,home
+Rayo Vallecano de Madrid,FC Barcelona,-144.0,-0.5,-0.2,-0.3,draw
+Sevilla FC,Elche CF,-10.7,-0.4,-0.1,-0.1,draw
+Getafe CF,Real Oviedo,86.0,0.1,0.8,0.3,home
+Real Sociedad de Fútbol,Real Madrid CF,-146.5,-0.1,-0.8,-0.5,away
+Athletic Club,Deportivo Alavés,-15.2,-0.5,0.0,-0.1,away
+Club Atlético de Madrid,Villarreal CF,-13.9,-0.6,-0.6,-0.1,home
+RC Celta de Vigo,Girona FC,49.1,0.7,-0.5,0.3,draw
+Levante UD,Real Betis Balompié,-71.0,0.1,-0.2,0.2,draw
+CA Osasuna,Rayo Vallecano de Madrid,-67.2,-0.2,-0.5,-0.3,home
+FC Barcelona,Valencia CF,151.9,0.2,0.5,0.3,home
+RCD Espanyol de Barcelona,RCD Mallorca,-3.5,-0.6,-0.1,-0.2,home
+Real Betis Balompié,Real Sociedad de Fútbol,67.4,0.0,0.6,0.3,home
+Girona FC,Levante UD,-11.2,-0.9,0.3,-0.5,away
+Real Madrid CF,RCD Espanyol de Barcelona,166.0,0.9,0.2,0.4,home
+Villarreal CF,CA Osasuna,117.5,1.0,0.2,0.3,home
+Deportivo Alavés,Sevilla FC,12.6,0.9,-0.5,0.0,away
+Valencia CF,Athletic Club,50.1,0.3,0.5,0.2,home
+Rayo Vallecano de Madrid,RC Celta de Vigo,0.7,-0.2,0.7,0.1,draw
+RCD Mallorca,Club Atlético de Madrid,-87.6,-0.1,0.7,0.0,draw
+Elche CF,Real Oviedo,62.0,0.5,0.4,0.3,home
+FC Barcelona,Getafe CF,164.7,0.9,0.0,0.3,home
+Athletic Club,Girona FC,-8.1,0.5,-0.6,0.2,draw
+RCD Espanyol de Barcelona,Valencia CF,-46.6,-0.8,0.0,-0.3,draw
+Levante UD,Real Madrid CF,-150.1,0.0,-0.4,0.0,away
+Sevilla FC,Villarreal CF,-105.8,-1.2,0.0,-0.1,away
+Getafe CF,Deportivo Alavés,22.0,-0.9,1.0,0.1,draw
+Club Atlético de Madrid,Rayo Vallecano de Madrid,36.5,0.2,-0.9,-0.1,home
+Real Sociedad de Fútbol,RCD Mallorca,16.0,0.2,-0.7,-0.3,home
+CA Osasuna,Elche CF,-22.4,-0.2,-0.3,-0.3,draw
+Real Oviedo,FC Barcelona,-250.8,-1.0,-0.8,-0.6,away
+Girona FC,RCD Espanyol de Barcelona,4.7,0.0,0.1,-0.1,draw
+Getafe CF,Levante UD,17.9,-0.8,0.7,-0.1,draw
+Club Atlético de Madrid,Real Madrid CF,-74.9,-0.2,-0.8,-0.2,home
+RCD Mallorca,Deportivo Alavés,-8.3,-0.4,0.6,0.0,home
+Villarreal CF,Athletic Club,108.4,0.8,0.5,0.2,home
+Rayo Vallecano de Madrid,Sevilla FC,55.4,0.4,0.3,0.1,away
+Elche CF,RC Celta de Vigo,-44.0,-0.2,0.5,0.1,home
+FC Barcelona,Real Sociedad de Fútbol,179.1,0.2,1.1,0.7,home
+Real Betis Balompié,CA Osasuna,99.5,0.5,0.2,0.2,home
+Valencia CF,Real Oviedo,98.9,0.8,0.3,0.3,away
+CA Osasuna,Getafe CF,-46.4,0.2,-0.7,-0.3,home
+Real Oviedo,Levante UD,-68.1,-0.9,-0.1,-0.4,away
+Girona FC,Valencia CF,-41.9,-0.8,0.1,-0.4,home
+Athletic Club,RCD Mallorca,-6.9,-0.1,-0.6,-0.1,home
+Real Madrid CF,Villarreal CF,61.1,-0.4,0.2,0.1,home
+Deportivo Alavés,Elche CF,2.0,0.5,-0.6,-0.1,home
+Sevilla FC,FC Barcelona,-199.4,-0.9,-0.5,-0.4,home
+RCD Espanyol de Barcelona,Real Betis Balompié,-86.9,-0.8,0.0,-0.2,away
+Real Sociedad de Fútbol,Rayo Vallecano de Madrid,-35.0,0.3,-0.9,-0.4,away
+RC Celta de Vigo,Club Atlético de Madrid,-37.2,0.0,0.2,0.0,draw
+Real Oviedo,RCD Espanyol de Barcelona,-52.2,0.0,-0.3,0.0,away
+Sevilla FC,RCD Mallorca,-4.4,-0.5,-0.1,0.0,away
+FC Barcelona,Girona FC,193.8,1.0,0.4,0.7,home
+Villarreal CF,Real Betis Balompié,18.0,0.5,0.0,0.1,draw
+Club Atlético de Madrid,CA Osasuna,103.7,0.4,-0.4,0.2,home
+Elche CF,Athletic Club,13.3,0.0,0.6,0.2,draw
+RC Celta de Vigo,Real Sociedad de Fútbol,34.4,-0.1,0.2,0.3,draw
+Levante UD,Rayo Vallecano de Madrid,-38.6,0.4,-0.5,0.1,away
+Getafe CF,Real Madrid CF,-132.2,-0.8,0.3,-0.1,away
+Deportivo Alavés,Valencia CF,-34.9,0.2,-0.5,-0.1,draw
+Real Sociedad de Fútbol,Sevilla FC,20.4,0.7,-0.6,-0.3,home
+Girona FC,Real Oviedo,56.9,0.0,0.4,-0.1,draw
+RCD Espanyol de Barcelona,Elche CF,-9.8,-0.5,-0.1,-0.3,home
+Athletic Club,Getafe CF,-37.2,0.4,-1.0,-0.2,away
+Valencia CF,Villarreal CF,-58.3,-0.5,0.0,0.0,away
+RCD Mallorca,Levante UD,-12.4,-0.3,0.3,-0.2,draw
+Real Madrid CF,FC Barcelona,-32.5,-0.1,-0.3,-0.2,home
+CA Osasuna,RC Celta de Vigo,-66.5,-0.4,0.2,-0.2,away
+Rayo Vallecano de Madrid,Deportivo Alavés,42.7,-0.5,0.8,0.1,home
+Real Betis Balompié,Club Atlético de Madrid,-4.2,0.1,0.6,0.0,away
+Getafe CF,Girona FC,29.1,0.1,0.4,0.4,home
+Villarreal CF,Rayo Vallecano de Madrid,50.4,0.8,-0.3,0.0,home
+Club Atlético de Madrid,Sevilla FC,91.9,0.6,-0.6,0.0,home
+Real Sociedad de Fútbol,Athletic Club,22.9,0.3,-0.1,-0.2,home
+Real Madrid CF,Valencia CF,119.4,0.1,0.2,0.1,home
+Levante UD,RC Celta de Vigo,-38.0,0.2,0.2,0.2,away
+Deportivo Alavés,RCD Espanyol de Barcelona,11.8,1.0,-0.5,0.2,home
+FC Barcelona,Elche CF,188.7,0.5,0.4,0.3,home
+Real Betis Balompié,RCD Mallorca,83.4,0.2,-0.1,0.0,home
+Real Oviedo,CA Osasuna,-39.6,-0.3,-0.1,0.0,draw
+Elche CF,Real Sociedad de Fútbol,-9.7,-0.3,0.7,0.4,draw
+Girona FC,Deportivo Alavés,-7.1,-1.0,0.6,-0.3,home
+Sevilla FC,CA Osasuna,11.8,-0.2,0.2,0.2,home
+Club Atlético de Madrid,Levante UD,75.2,-0.2,-0.4,-0.2,home
+RCD Espanyol de Barcelona,Villarreal CF,-104.9,-1.3,0.0,-0.3,away
+Athletic Club,Real Oviedo,48.8,0.5,-0.2,0.1,home
+Rayo Vallecano de Madrid,Real Madrid CF,-111.5,-0.4,0.1,-0.1,draw
+Valencia CF,Real Betis Balompié,-40.2,0.0,0.0,0.1,draw
+RCD Mallorca,Getafe CF,-30.3,0.5,-0.4,-0.1,home
+RC Celta de Vigo,FC Barcelona,-144.7,-0.3,-0.9,-0.4,away
+Valencia CF,Levante UD,30.8,-0.1,0.2,-0.1,home
+Deportivo Alavés,RC Celta de Vigo,-42.1,0.3,-0.1,0.0,away
+FC Barcelona,Athletic Club,202.0,0.5,1.0,0.5,home
+CA Osasuna,Real Sociedad de Fútbol,-32.1,-0.5,0.4,0.1,away
+Villarreal CF,RCD Mallorca,101.4,0.7,-0.1,0.1,home
+Real Oviedo,Rayo Vallecano de Madrid,-106.7,-0.5,-0.6,-0.3,draw
+Real Betis Balompié,Girona FC,82.2,0.8,-0.1,0.3,draw
+Getafe CF,Club Atlético de Madrid,-57.3,-0.6,1.1,0.1,away
+Elche CF,Real Madrid CF,-156.2,-0.4,-0.1,-0.1,draw
+RCD Espanyol de Barcelona,Sevilla FC,0.9,-0.1,0.0,-0.2,home
+Getafe CF,Elche CF,24.0,-0.4,0.4,0.0,home
+RCD Mallorca,CA Osasuna,16.1,0.3,0.3,0.2,draw
+FC Barcelona,Deportivo Alavés,186.8,0.0,1.0,0.4,home
+Levante UD,Athletic Club,19.3,0.4,0.3,0.3,away
+Club Atlético de Madrid,Real Oviedo,143.3,0.7,-0.3,0.2,home
+Real Sociedad de Fútbol,Villarreal CF,-85.4,-0.5,-0.6,-0.4,away
+Sevilla FC,Real Betis Balompié,-87.7,-0.7,0.0,0.0,away
+RC Celta de Vigo,RCD Espanyol de Barcelona,53.8,0.7,-0.4,0.2,away
+Girona FC,Real Madrid CF,-161.3,-0.9,-0.1,-0.5,draw
+Rayo Vallecano de Madrid,Valencia CF,7.9,-0.3,0.3,0.0,draw
+FC Barcelona,Club Atlético de Madrid,107.5,0.3,1.1,0.4,home
+Athletic Club,Real Madrid CF,-169.4,-0.4,-0.7,-0.3,away
+Real Oviedo,RCD Mallorca,-55.7,-0.6,-0.4,-0.2,draw
+Villarreal CF,Getafe CF,71.1,1.2,-0.5,0.0,home
+Deportivo Alavés,Real Sociedad de Fútbol,-7.7,0.2,0.1,0.3,home
+Real Betis Balompié,FC Barcelona,-111.7,-0.2,-0.5,-0.4,away
+Athletic Club,Club Atlético de Madrid,-94.5,-0.2,0.1,-0.1,home
+Elche CF,Girona FC,5.1,0.5,0.0,0.4,home
+Valencia CF,Sevilla FC,47.5,0.7,0.0,0.1,draw
+RCD Espanyol de Barcelona,Rayo Vallecano de Madrid,-54.5,-0.5,-0.3,-0.3,home
+Real Madrid CF,RC Celta de Vigo,112.2,0.2,0.6,0.2,away
+CA Osasuna,Levante UD,-28.5,-0.6,0.0,-0.4,home
+Real Sociedad de Fútbol,Girona FC,14.8,0.8,-0.7,0.0,away
+Club Atlético de Madrid,Valencia CF,44.4,-0.1,-0.6,-0.1,home
+RCD Mallorca,Elche CF,-6.3,0.1,0.0,-0.1,home
+FC Barcelona,CA Osasuna,211.2,0.7,0.7,0.6,home
+Getafe CF,RCD Espanyol de Barcelona,33.8,0.1,0.5,0.3,away
+Sevilla FC,Real Oviedo,51.4,0.1,0.3,0.2,home
+RC Celta de Vigo,Athletic Club,57.3,0.2,0.1,0.1,home
+Deportivo Alavés,Real Madrid CF,-154.2,0.1,-0.7,-0.2,away
+Rayo Vallecano de Madrid,Real Betis Balompié,-32.4,-0.3,0.3,0.1,draw
+Valencia CF,RCD Mallorca,43.1,0.2,-0.1,0.1,draw
+Real Oviedo,RC Celta de Vigo,-106.1,-0.7,0.1,-0.2,draw
+Levante UD,Real Sociedad de Fútbol,-3.6,0.1,0.4,0.5,draw
+CA Osasuna,Deportivo Alavés,-24.4,-0.7,0.3,-0.2,home
+Real Madrid CF,Sevilla FC,166.9,0.8,0.2,0.2,home
+Girona FC,Club Atlético de Madrid,-86.4,-0.7,0.7,-0.3,away
+Villarreal CF,FC Barcelona,-93.6,0.3,-0.5,-0.3,away
+Elche CF,Rayo Vallecano de Madrid,-44.7,0.0,-0.2,0.0,home
+Real Betis Balompié,Getafe CF,53.1,0.7,-0.5,-0.1,home
+Athletic Club,RCD Espanyol de Barcelona,-3.4,0.5,-0.5,0.1,away
+Rayo Vallecano de Madrid,Getafe CF,20.7,0.4,-0.2,0.0,draw
+RC Celta de Vigo,Valencia CF,7.2,-0.1,-0.4,-0.1,home
+CA Osasuna,Athletic Club,-9.2,-0.2,0.3,-0.1,draw
+Elche CF,Villarreal CF,-95.1,-0.8,0.1,0.0,away
+RCD Espanyol de Barcelona,FC Barcelona,-198.5,-1.0,-0.5,-0.6,away
+Sevilla FC,Levante UD,-16.8,-0.8,0.2,-0.2,away
+Real Madrid CF,Real Betis Balompié,79.1,0.1,0.2,0.2,home
+Deportivo Alavés,Real Oviedo,64.0,1.0,-0.2,0.2,draw
+RCD Mallorca,Girona FC,-1.2,0.6,0.0,0.3,away
+Real Sociedad de Fútbol,Club Atlético de Madrid,-71.6,0.1,0.0,-0.3,draw
+Getafe CF,Real Sociedad de Fútbol,14.3,-0.7,1.1,0.4,away
+Real Oviedo,Real Betis Balompié,-139.1,-0.8,-0.3,-0.2,draw
+Villarreal CF,Deportivo Alavés,93.1,0.3,0.5,0.1,home
+Girona FC,CA Osasuna,17.3,-0.3,0.3,-0.1,home
+Valencia CF,Elche CF,36.8,0.3,-0.1,0.0,draw
+Rayo Vallecano de Madrid,RCD Mallorca,51.0,-0.1,0.2,0.1,home
+Levante UD,RCD Espanyol de Barcelona,15.9,0.9,-0.2,0.4,draw
+Sevilla FC,RC Celta de Vigo,-54.7,-0.6,0.4,0.0,away
+RCD Espanyol de Barcelona,Girona FC,-4.7,0.0,-0.1,0.1,away
+Real Madrid CF,Levante UD,150.1,0.0,0.4,0.0,home
+RCD Mallorca,Athletic Club,6.9,0.1,0.6,0.1,home
+CA Osasuna,Real Oviedo,39.6,0.3,0.1,0.0,home
+Real Betis Balompié,Villarreal CF,-18.0,-0.5,0.0,-0.1,home
+Getafe CF,Valencia CF,-12.8,-0.7,0.5,0.0,away
+Club Atlético de Madrid,Deportivo Alavés,79.3,-0.3,-0.1,0.0,home
+RC Celta de Vigo,Rayo Vallecano de Madrid,-0.7,0.2,-0.7,-0.1,home
+Real Sociedad de Fútbol,FC Barcelona,-179.1,-0.2,-1.1,-0.7,home
+Elche CF,Sevilla FC,10.7,0.4,0.1,0.1,draw
+Levante UD,Elche CF,6.1,0.4,-0.3,0.1,home
+Rayo Vallecano de Madrid,CA Osasuna,67.2,0.2,0.5,0.3,away
+Valencia CF,RCD Espanyol de Barcelona,46.6,0.8,0.0,0.3,home
+Sevilla FC,Athletic Club,2.6,-0.4,0.5,0.1,home
+Villarreal CF,Real Madrid CF,-61.1,0.4,-0.2,-0.1,away
+Club Atlético de Madrid,RCD Mallorca,87.6,0.1,-0.7,0.0,home
+FC Barcelona,Real Oviedo,250.8,1.0,0.8,0.6,home
+Real Sociedad de Fútbol,RC Celta de Vigo,-34.4,0.1,-0.2,-0.3,home
+Deportivo Alavés,Real Betis Balompié,-75.1,0.2,-0.5,0.0,home
+Girona FC,Getafe CF,-29.1,-0.1,-0.4,-0.4,draw
+RCD Espanyol de Barcelona,Deportivo Alavés,-11.8,-1.0,0.5,-0.2,away
+Real Oviedo,Girona FC,-56.9,0.0,-0.4,0.1,home
+CA Osasuna,Villarreal CF,-117.5,-1.0,-0.2,-0.3,draw
+Levante UD,Club Atlético de Madrid,-75.2,0.2,0.4,0.2,draw
+Elche CF,FC Barcelona,-188.7,-0.5,-0.4,-0.3,away
+Real Madrid CF,Rayo Vallecano de Madrid,111.5,0.4,-0.1,0.1,home
+Real Betis Balompié,Valencia CF,40.2,0.0,0.0,-0.1,home
+Getafe CF,RC Celta de Vigo,-20.0,-0.6,0.9,0.1,draw
+Athletic Club,Real Sociedad de Fútbol,-22.9,-0.3,0.1,0.2,draw
+RCD Mallorca,Sevilla FC,4.4,0.5,0.1,0.0,home
+RC Celta de Vigo,CA Osasuna,66.5,0.4,-0.2,0.2,away
+FC Barcelona,RCD Mallorca,195.0,0.4,0.4,0.4,home
+Real Sociedad de Fútbol,Elche CF,9.7,0.3,-0.7,-0.4,home
+Deportivo Alavés,Getafe CF,-22.0,0.9,-1.0,-0.1,away
+Athletic Club,Levante UD,-19.3,-0.4,-0.3,-0.3,home
+Sevilla FC,Girona FC,-5.6,0.1,-0.1,0.3,draw
+Club Atlético de Madrid,Real Betis Balompié,4.2,-0.1,-0.6,0.0,away
+Valencia CF,Real Madrid CF,-119.4,-0.1,-0.2,-0.1,away
+Villarreal CF,RCD Espanyol de Barcelona,104.9,1.3,0.0,0.3,home
+Elche CF,CA Osasuna,22.4,0.2,0.3,0.3,draw
+RCD Espanyol de Barcelona,RC Celta de Vigo,-53.8,-0.7,0.4,-0.2,draw
+Getafe CF,Villarreal CF,-71.1,-1.2,0.5,0.0,home
+Sevilla FC,Deportivo Alavés,-12.6,-0.9,0.5,0.0,draw
+Real Madrid CF,Real Sociedad de Fútbol,146.5,0.1,0.8,0.5,home
+Real Oviedo,Athletic Club,-48.8,-0.5,0.2,-0.1,away
+Rayo Vallecano de Madrid,Club Atlético de Madrid,-36.5,-0.2,0.9,0.1,home
+Levante UD,Valencia CF,-30.8,0.1,-0.2,0.1,away
+RCD Mallorca,Real Betis Balompié,-83.4,-0.2,0.1,0.0,away
+Girona FC,FC Barcelona,-193.8,-1.0,-0.4,-0.7,home
+Levante UD,Villarreal CF,-89.0,-0.4,-0.2,0.1,away
+Athletic Club,Elche CF,-13.3,0.0,-0.6,-0.2,home
+Real Sociedad de Fútbol,Real Oviedo,71.7,0.8,-0.3,-0.1,draw
+Real Betis Balompié,Rayo Vallecano de Madrid,32.4,0.3,-0.3,-0.1,draw
+CA Osasuna,Real Madrid CF,-178.6,-0.6,-0.4,-0.4,home
+Club Atlético de Madrid,RCD Espanyol de Barcelona,91.1,0.7,-0.6,0.2,home
+Getafe CF,Sevilla FC,34.7,0.0,0.5,0.1,away
+FC Barcelona,Levante UD,182.7,0.1,0.7,0.2,home
+RC Celta de Vigo,RCD Mallorca,50.3,0.1,-0.5,0.0,home
+Villarreal CF,Valencia CF,58.3,0.5,0.0,0.0,home
+Deportivo Alavés,Girona FC,7.1,1.0,-0.6,0.3,draw
+Levante UD,Deportivo Alavés,4.1,-0.1,0.3,0.2,home
+Rayo Vallecano de Madrid,Athletic Club,58.0,0.0,0.8,0.2,draw
+FC Barcelona,Villarreal CF,93.6,-0.3,0.5,0.3,home
+RCD Mallorca,Real Sociedad de Fútbol,-16.0,-0.2,0.7,0.3,away
+Real Oviedo,Club Atlético de Madrid,-143.3,-0.7,0.3,-0.2,away
+Elche CF,RCD Espanyol de Barcelona,9.8,0.5,0.1,0.3,draw
+Valencia CF,CA Osasuna,59.3,0.5,0.2,0.3,home
+Real Betis Balompié,Sevilla FC,87.7,0.7,0.0,0.0,draw
+Girona FC,RC Celta de Vigo,-49.1,-0.7,0.5,-0.3,away
+Real Madrid CF,Getafe CF,132.2,0.8,-0.3,0.1,away
+Rayo Vallecano de Madrid,Real Oviedo,106.7,0.5,0.6,0.3,home
+RC Celta de Vigo,Real Madrid CF,-112.2,-0.2,-0.6,-0.2,away
+CA Osasuna,RCD Mallorca,-16.1,-0.3,-0.3,-0.2,draw
+Levante UD,Girona FC,11.2,0.9,-0.3,0.5,draw
+Club Atlético de Madrid,Real Sociedad de Fútbol,71.6,-0.1,0.0,0.3,home
+Athletic Club,FC Barcelona,-202.0,-0.5,-1.0,-0.5,away
+Villarreal CF,Elche CF,95.1,0.8,-0.1,0.0,home
+Getafe CF,Real Betis Balompié,-53.1,-0.7,0.5,0.1,home
+Sevilla FC,Rayo Vallecano de Madrid,-55.4,-0.4,-0.3,-0.1,draw
+Valencia CF,Deportivo Alavés,34.9,-0.2,0.5,0.1,home
+RCD Espanyol de Barcelona,Real Oviedo,52.2,0.0,0.3,0.0,draw
+Deportivo Alavés,Villarreal CF,-93.1,-0.3,-0.5,-0.1,draw
+Girona FC,Athletic Club,8.1,-0.5,0.6,-0.2,home
+Club Atlético de Madrid,Getafe CF,57.3,0.6,-1.1,-0.1,home
+Real Oviedo,Valencia CF,-98.9,-0.8,-0.3,-0.3,home
+Real Madrid CF,Elche CF,156.2,0.4,0.1,0.1,home
+RCD Mallorca,RCD Espanyol de Barcelona,3.5,0.6,0.1,0.2,home
+FC Barcelona,Sevilla FC,199.4,0.9,0.5,0.4,home
+Real Betis Balompié,RC Celta de Vigo,33.0,0.1,0.4,0.0,draw
+Real Sociedad de Fútbol,CA Osasuna,32.1,0.5,-0.4,-0.1,home
+Rayo Vallecano de Madrid,Levante UD,38.6,-0.4,0.5,-0.1,draw
+Villarreal CF,Real Sociedad de Fútbol,85.4,0.5,0.6,0.4,home
+Elche CF,RCD Mallorca,6.3,-0.1,0.0,0.1,home
+RCD Espanyol de Barcelona,Getafe CF,-33.8,-0.1,-0.5,-0.3,away
+Levante UD,Real Oviedo,68.1,0.9,0.1,0.4,home
+CA Osasuna,Girona FC,-17.3,0.3,-0.3,0.1,home
+Sevilla FC,Valencia CF,-47.5,-0.7,0.0,-0.1,away
+FC Barcelona,Rayo Vallecano de Madrid,144.0,0.5,0.2,0.3,home
+RC Celta de Vigo,Deportivo Alavés,42.1,-0.3,0.1,0.0,away
+Athletic Club,Real Betis Balompié,-90.3,-0.3,-0.5,-0.1,home
+Real Madrid CF,Club Atlético de Madrid,74.9,0.2,0.8,0.2,home
+Rayo Vallecano de Madrid,Elche CF,44.7,0.0,0.2,0.0,home
+Real Sociedad de Fútbol,Levante UD,3.6,-0.1,-0.4,-0.5,home
+RCD Mallorca,Real Madrid CF,-162.5,-0.3,-0.1,-0.2,home
+Real Betis Balompié,RCD Espanyol de Barcelona,86.9,0.8,0.0,0.2,draw
+Club Atlético de Madrid,FC Barcelona,-107.5,-0.3,-1.1,-0.4,away
+Getafe CF,Athletic Club,37.2,-0.4,1.0,0.2,home
+Valencia CF,RC Celta de Vigo,-7.2,0.1,0.4,0.1,away
+Real Oviedo,Sevilla FC,-51.4,-0.1,-0.3,-0.2,home
+Deportivo Alavés,CA Osasuna,24.4,0.7,-0.3,0.2,draw
+Girona FC,Villarreal CF,-100.2,-1.3,0.1,-0.4,home
+Real Madrid CF,Girona FC,161.3,0.9,0.1,0.5,draw
+Real Sociedad de Fútbol,Deportivo Alavés,7.7,-0.2,-0.1,-0.3,draw
+Elche CF,Valencia CF,-36.8,-0.3,0.1,0.0,home
+FC Barcelona,RCD Espanyol de Barcelona,198.5,1.0,0.5,0.6,home
+Sevilla FC,Club Atlético de Madrid,-91.9,-0.6,0.6,0.0,home
+CA Osasuna,Real Betis Balompié,-99.5,-0.5,-0.2,-0.2,draw
+RCD Mallorca,Rayo Vallecano de Madrid,-51.0,0.1,-0.2,-0.1,home
+RC Celta de Vigo,Real Oviedo,106.1,0.7,-0.1,0.2,away
+Athletic Club,Villarreal CF,-108.4,-0.8,-0.5,-0.2,away
+Levante UD,Getafe CF,-17.9,0.8,-0.7,0.1,home
+Athletic Club,CA Osasuna,9.2,0.2,-0.3,0.1,home
+RCD Mallorca,Valencia CF,-43.1,-0.2,0.1,-0.1,draw
+Real Madrid CF,Deportivo Alavés,154.2,-0.1,0.7,0.2,home
+Girona FC,Real Betis Balompié,-82.2,-0.8,0.1,-0.3,away
+Elche CF,Club Atlético de Madrid,-81.2,-0.2,0.7,0.1,home
+Real Sociedad de Fútbol,Getafe CF,-14.3,0.7,-1.1,-0.4,away
+FC Barcelona,RC Celta de Vigo,144.7,0.3,0.9,0.4,home
+Levante UD,Sevilla FC,16.8,0.8,-0.2,0.2,home
+Rayo Vallecano de Madrid,RCD Espanyol de Barcelona,54.5,0.5,0.3,0.3,home
+Real Oviedo,Villarreal CF,-157.1,-1.3,-0.3,-0.3,draw
+Real Betis Balompié,Real Madrid CF,-79.1,-0.1,-0.2,-0.2,draw
+Deportivo Alavés,RCD Mallorca,8.3,0.4,-0.6,0.0,home
+Getafe CF,FC Barcelona,-164.7,-0.9,0.0,-0.3,away
+Valencia CF,Girona FC,41.9,0.8,-0.1,0.4,home
+Club Atlético de Madrid,Athletic Club,94.5,0.2,-0.1,0.1,home
+Rayo Vallecano de Madrid,Real Sociedad de Fútbol,35.0,-0.3,0.9,0.4,draw
+Real Oviedo,Elche CF,-62.0,-0.5,-0.4,-0.3,away
+CA Osasuna,Sevilla FC,-11.8,0.2,-0.2,-0.2,home
+Villarreal CF,RC Celta de Vigo,51.1,0.6,0.4,0.1,home
+RCD Espanyol de Barcelona,Levante UD,-15.9,-0.9,0.2,-0.4,draw
+Girona FC,RCD Mallorca,1.2,-0.6,0.0,-0.3,away
+Villarreal CF,Levante UD,89.0,0.4,0.2,-0.1,home
+Valencia CF,Club Atlético de Madrid,-44.4,0.1,0.6,0.1,away
+Deportivo Alavés,Athletic Club,15.2,0.5,0.0,0.1,away
+CA Osasuna,FC Barcelona,-211.2,-0.7,-0.7,-0.6,away
+RC Celta de Vigo,Elche CF,44.0,0.2,-0.5,-0.1,home
+Getafe CF,Rayo Vallecano de Madrid,-20.7,-0.4,0.2,0.0,away
+Real Betis Balompié,Real Oviedo,139.1,0.8,0.3,0.2,home
+RCD Espanyol de Barcelona,Real Madrid CF,-166.0,-0.9,-0.2,-0.4,away
+Sevilla FC,Real Sociedad de Fútbol,-20.4,-0.7,0.6,0.3,home
+Levante UD,CA Osasuna,28.5,0.6,0.0,0.4,home
+Elche CF,Deportivo Alavés,-2.0,-0.5,0.6,0.1,draw
+Sevilla FC,RCD Espanyol de Barcelona,-0.9,0.1,0.0,0.2,home
+Club Atlético de Madrid,RC Celta de Vigo,37.2,0.0,-0.2,0.0,away
+Real Sociedad de Fútbol,Real Betis Balompié,-67.4,0.0,-0.6,-0.3,draw
+RCD Mallorca,Villarreal CF,-101.4,-0.7,0.1,-0.1,draw
+Athletic Club,Valencia CF,-50.1,-0.3,-0.5,-0.2,away
+Real Oviedo,Getafe CF,-86.0,-0.1,-0.8,-0.3,draw
+FC Barcelona,Real Madrid CF,32.5,0.1,0.3,0.2,home
+Rayo Vallecano de Madrid,Girona FC,49.8,0.5,0.2,0.4,draw
+RC Celta de Vigo,Levante UD,38.0,-0.2,-0.2,-0.2,away
+Real Betis Balompié,Elche CF,77.1,0.3,-0.1,-0.1,home
+CA Osasuna,Club Atlético de Madrid,-103.7,-0.4,0.4,-0.2,away
+RCD Espanyol de Barcelona,Athletic Club,3.4,-0.5,0.5,-0.1,home
+Villarreal CF,Sevilla FC,105.8,1.2,0.0,0.1,away
+Deportivo Alavés,FC Barcelona,-186.8,0.0,-1.0,-0.4,home
+Getafe CF,RCD Mallorca,30.3,-0.5,0.4,0.1,home
+Valencia CF,Rayo Vallecano de Madrid,-7.9,0.3,-0.3,0.0,draw
+Girona FC,Real Sociedad de Fútbol,-14.8,-0.8,0.7,0.0,draw
+Real Madrid CF,Real Oviedo,218.2,0.9,0.5,0.4,home
+Athletic Club,RC Celta de Vigo,-57.3,-0.2,-0.1,-0.1,draw
+Club Atlético de Madrid,Girona FC,86.4,0.7,-0.7,0.3,home
+Elche CF,Getafe CF,-24.0,0.4,-0.4,0.0,home
+Levante UD,RCD Mallorca,12.4,0.3,-0.3,0.2,home
+Rayo Vallecano de Madrid,Villarreal CF,-50.4,-0.8,0.3,0.0,home
+Real Sociedad de Fútbol,Valencia CF,-27.2,0.0,-0.6,-0.4,away
+Real Oviedo,Deportivo Alavés,-64.0,-1.0,0.2,-0.2,away
+CA Osasuna,RCD Espanyol de Barcelona,-12.6,0.3,-0.2,0.0,away
+Sevilla FC,Real Madrid CF,-166.9,-0.8,-0.2,-0.2,away
+FC Barcelona,Real Betis Balompié,111.7,0.2,0.5,0.4,home
+Deportivo Alavés,Rayo Vallecano de Madrid,-42.7,0.5,-0.8,-0.1,away
+Real Betis Balompié,Levante UD,71.0,-0.1,0.2,-0.2,home
+RC Celta de Vigo,Sevilla FC,54.7,0.6,-0.4,0.0,home
+RCD Espanyol de Barcelona,Real Sociedad de Fútbol,-19.5,-0.8,0.6,0.1,draw
+Getafe CF,CA Osasuna,46.4,-0.2,0.7,0.3,home
+RCD Mallorca,Real Oviedo,55.7,0.6,0.4,0.2,home
+Real Madrid CF,Athletic Club,169.4,0.4,0.7,0.3,home
+Valencia CF,FC Barcelona,-151.9,-0.2,-0.5,-0.3,home
+Girona FC,Elche CF,-5.1,-0.5,0.0,-0.4,draw
+Villarreal CF,Club Atlético de Madrid,13.9,0.6,0.6,0.1,home

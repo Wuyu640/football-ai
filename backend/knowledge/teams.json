@@ -1,0 +1,99 @@
+{
+  "FC Barcelona": {
+    "country": "Spain",
+    "league": "LaLiga",
+
+    "coach": "Hansi Flick",
+
+    "preferred_system": "4-3-3",
+
+    "identity": {
+
+      "possession": 9,
+
+      "pressing": 9,
+
+      "tempo": 8,
+
+      "transition_speed": 7,
+
+      "defensive_line": 9,
+
+      "width": 8,
+
+      "build_up": "Short",
+
+      "attack_focus": "Central"
+
+    },
+
+    "strengths": [
+
+      "High pressing",
+
+      "Positional play",
+
+      "Ball possession",
+
+      "Technical midfield"
+
+    ],
+
+    "weaknesses": [
+
+      "Space behind defence",
+
+      "Counter attacks"
+
+    ]
+
+  },
+
+  "Real Madrid CF": {
+
+    "country": "Spain",
+
+    "league": "LaLiga",
+
+    "coach": "Xabi Alonso",
+
+    "preferred_system": "3-4-2-1",
+
+    "identity": {
+
+      "possession": 8,
+
+      "pressing": 7,
+
+      "tempo": 9,
+
+      "transition_speed": 10,
+
+      "defensive_line": 7,
+
+      "width": 8,
+
+      "build_up": "Mixed",
+
+      "attack_focus": "Transitions"
+
+    },
+
+    "strengths": [
+
+      "Counter attacks",
+
+      "Individual quality",
+
+      "Vertical attacks"
+
+    ],
+
+    "weaknesses": [
+
+      "High pressure build-up"
+
+    ]
+
+  }
+}
