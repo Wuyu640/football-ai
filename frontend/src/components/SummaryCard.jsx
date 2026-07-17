@@ -1,43 +1,33 @@
-import teams from "../constants/teams";
-
-function TeamSelect({ label, value, onChange }) {
+function SummaryCard({ summary }) {
   return (
     <div
       style={{
+        background: "#1e293b",
+        borderRadius: "16px",
+        padding: "20px",
         marginBottom: "20px",
       }}
     >
-      <label
+      <h2
         style={{
-          display: "block",
-          marginBottom: "8px",
+          marginBottom: "15px",
+          fontSize: "20px",
         }}
       >
-        {label}
-      </label>
+        Resumen del partido
+      </h2>
 
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
+      <p
         style={{
-          width: "100%",
-          padding: "12px",
-          borderRadius: "8px",
-          border: "1px solid #334155",
-          background: "#0f172a",
-          color: "white",
-          fontSize: "15px",
-          outline: "none",
+          lineHeight: "1.7",
+          color: "#cbd5e1",
+          margin: 0,
         }}
       >
-        {teams.map((team) => (
-          <option key={team} value={team}>
-            {team}
-          </option>
-        ))}
-      </select>
+        {summary}
+      </p>
     </div>
   );
 }
 
-export default TeamSelect;
+export default SummaryCard;
