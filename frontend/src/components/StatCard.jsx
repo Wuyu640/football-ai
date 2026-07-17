@@ -12,6 +12,7 @@ function StatCard({ title, children }) {
         style={{
           marginBottom: "20px",
           fontSize: "20px",
+          color: "white",
         }}
       >
         {title}
