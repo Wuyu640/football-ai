@@ -33,7 +33,7 @@ function App() {
               letterSpacing: "-1px",
             }}
           >
-            ⚽ El Cuñao IA
+            VARGPT
           </h1>
 
           <p
@@ -44,7 +44,7 @@ function App() {
               marginBottom: 0,
             }}
           >
-            ApostaConCabeza(El jura).
+            El 0-0 no existe.
           </p>
         </div>
 
