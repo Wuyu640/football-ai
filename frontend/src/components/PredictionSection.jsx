@@ -4,8 +4,16 @@ import SummaryCard from "./SummaryCard";
 
 function PredictionSection({ prediction }) {
   return (
-    <>
-      <SummaryCard summary={prediction.summary} />
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "20px",
+      }}
+    >
+      <div style={{ gridColumn: "1 / -1" }}>
+        <SummaryCard summary={prediction.summary} />
+      </div>
 
       <StatCard title="Probabilidades (1X2)">
         <ProbabilityRow
@@ -53,7 +61,7 @@ function PredictionSection({ prediction }) {
           />
         ))}
       </StatCard>
-    </>
+    </div>
   );
 }
 
