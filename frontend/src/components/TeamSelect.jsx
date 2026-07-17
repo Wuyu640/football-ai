@@ -18,6 +18,7 @@ function TeamSelect({
         style={{
           display: "block",
           marginBottom: "8px",
+          color: "white",
         }}
       >
         {label}
@@ -25,7 +26,7 @@ function TeamSelect({
 
       <select
         value={value}
-        onChange={(e) => onChange(Number(e.target.value))}
+        onChange={(e) => onChange(e.target.value)}
         style={{
           width: "100%",
           padding: "12px",
