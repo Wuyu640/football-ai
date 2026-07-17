@@ -9,7 +9,13 @@ function ProbabilityRow({ label, value }) {
         borderBottom: "1px solid #334155",
       }}
     >
-      <span>{label}</span>
+      <span
+        style={{
+          color: "white",
+        }}
+      >
+        {label}
+      </span>
 
       <strong
         style={{
