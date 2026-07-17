@@ -6,7 +6,7 @@ function App() {
     <div
       style={{
         minHeight: "100vh",
-        background: "#0f172a",
+        background: "#07111f",
         padding: "40px 30px",
         fontFamily:
           "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
