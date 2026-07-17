@@ -12,6 +12,7 @@ function SummaryCard({ summary }) {
         style={{
           marginBottom: "15px",
           fontSize: "20px",
+          color: "white",
         }}
       >
         Resumen del partido
@@ -19,8 +20,8 @@ function SummaryCard({ summary }) {
 
       <p
         style={{
-          lineHeight: "1.7",
           color: "#cbd5e1",
+          lineHeight: "1.7",
           margin: 0,
         }}
       >
