@@ -1,19 +1,12 @@
-* {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
-  background: #0f172a;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-button {
-  font-family: inherit;
-}
-
-input {
-  font-family: inherit;
+  background: #07111f;
 }
