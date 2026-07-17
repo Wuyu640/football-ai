@@ -5,31 +5,61 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: "1200px",
-        margin: "40px auto",
-        padding: "20px",
+        minHeight: "100vh",
+        background: "#0f172a",
+        padding: "40px 30px",
+        fontFamily:
+          "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       }}
     >
-      <h1
-        style={{
-          textAlign: "center",
-          color: "white",
-          marginBottom: "40px",
-        }}
-      >
-        ⚽ Football AI
-      </h1>
-
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "360px 1fr",
-          gap: "25px",
+          maxWidth: "1400px",
+          margin: "0 auto",
         }}
       >
-        <SearchPanel />
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "45px",
+          }}
+        >
+          <h1
+            style={{
+              color: "white",
+              fontSize: "46px",
+              margin: 0,
+              fontWeight: "800",
+              letterSpacing: "-1px",
+            }}
+          >
+            ⚽ El Cuñao IA
+          </h1>
 
-        <ResultsPanel />
+          <p
+            style={{
+              color: "#94a3b8",
+              fontSize: "18px",
+              marginTop: "12px",
+              marginBottom: 0,
+            }}
+          >
+            ApostaConCabeza(El jura).
+          </p>
+        </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "360px 1fr",
+            gap: "30px",
+            alignItems: "start",
+          }}
+        >
+          <SearchPanel />
+
+          <ResultsPanel />
+        </div>
       </div>
     </div>
   );
