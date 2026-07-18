@@ -1,9 +1,18 @@
 import os
 import requests
+from abc import ABC, abstractmethod
 
 API_KEY = os.getenv("FOOTBALL_DATA_API_KEY")
 
-class MatchProvider:
+
+class DataProvider(ABC):
+
+    @abstractmethod
+    def get_match(self, home, away):
+        pass
+
+
+class MatchProvider(DataProvider):
 
     BASE_URL = "https://api.football-data.org/v4"
 

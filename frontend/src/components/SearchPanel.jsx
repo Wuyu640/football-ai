@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import CompetitionSelect from "./CompetitionSelect";
 import TeamSelect from "./TeamSelect";
-import MatchRequest from "../models/MatchRequest";
 import teams from "../constants/teams";
+import { predictMatch } from "../services/predictionApi";
 
-function SearchPanel() {
+function SearchPanel({ onPrediction }) {
   const [competition, setCompetition] = useState("LaLiga EA Sports");
 
   const [homeTeamId, setHomeTeamId] = useState(
@@ -30,15 +30,67 @@ function SearchPanel() {
     }
   }, [competition]);
 
-  function handleAnalyse() {
-    const request = new MatchRequest(
-      homeTeamId,
-      awayTeamId
-    );
+  async function handleAnalyse() {
+    try {
+      const competitionTeams = teams[competition] || [];
 
-    request.competition = competition;
+      const homeTeam = competitionTeams.find(
+        (team) => team.id === Number(homeTeamId)
+      );
 
-    console.log(request);
+      const awayTeam = competitionTeams.find(
+        (team) => team.id === Number(awayTeamId)
+      );
+
+      if (!homeTeam || !awayTeam) {
+        alert("Selecciona dos equipos.");
+        return;
+      }
+
+      const result = await predictMatch(
+        homeTeam.name,
+        awayTeam.name
+      );
+
+      const prediction = {
+        homeTeam: homeTeam.name,
+
+        awayTeam: awayTeam.name,
+
+        probabilities: {
+          home: Math.round(result.probabilities.home * 100),
+          draw: Math.round(result.probabilities.draw * 100),
+          away: Math.round(result.probabilities.away * 100),
+        },
+
+        xg: {
+          home: Number(result.xg.home_xg).toFixed(2),
+          away: Number(result.xg.away_xg).toFixed(2),
+        },
+
+        btts: {
+          yes: "-",
+          no: "-",
+        },
+
+        over25: "-",
+
+        scorelines: result.scores.map(
+          (score) =>
+            `${score.score} (${Math.round(
+              score.probability * 100
+            )}%)`
+        ),
+
+        summary:
+          "Predicción generada automáticamente por VARGPT.",
+      };
+
+      onPrediction(prediction);
+    } catch (error) {
+      console.error(error);
+      alert("No se pudo obtener la predicción.");
+    }
   }
 
   return (

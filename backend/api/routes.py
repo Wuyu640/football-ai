@@ -33,4 +33,7 @@ def predict(data: PredictRequest):
         data.away
     )
 
-    return engine.predict(match)
+    return engine.predict(
+        match.home,
+        match.away
+    )

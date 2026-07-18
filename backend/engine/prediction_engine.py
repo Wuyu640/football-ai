@@ -13,29 +13,41 @@ class PredictionEngine:
 
     def predict(self, home, away):
 
+        # Análisis del partido
         analysis = self.analysis.analyse(home, away)
 
+        # xG
         xg = self.xg.calculate(analysis)
 
+        # Matriz de Poisson
         matrix = self.poisson.matrix(
             xg["home_xg"],
             xg["away_xg"]
         )
 
-        home = 0
-        draw = 0
-        away = 0
+        home_probability = 0.0
+        draw_probability = 0.0
+        away_probability = 0.0
 
-        for (hg, ag), prob in matrix.items():
+        btts_probability = 0.0
+        over25_probability = 0.0
 
-            if hg > ag:
-                home += prob
+        for (home_goals, away_goals), probability in matrix.items():
 
-            elif hg == ag:
-                draw += prob
+            if home_goals > away_goals:
+                home_probability += probability
+
+            elif home_goals == away_goals:
+                draw_probability += probability
 
             else:
-                away += prob
+                away_probability += probability
+
+            if home_goals > 0 and away_goals > 0:
+                btts_probability += probability
+
+            if home_goals + away_goals >= 3:
+                over25_probability += probability
 
         best_scores = sorted(
             matrix.items(),
@@ -45,15 +57,22 @@ class PredictionEngine:
 
         return {
 
+            "analysis": analysis,
+
             "xg": xg,
 
             "probabilities": {
 
-                "home": round(home, 3),
+                "home": round(home_probability, 3),
+                "draw": round(draw_probability, 3),
+                "away": round(away_probability, 3)
 
-                "draw": round(draw, 3),
+            },
 
-                "away": round(away, 3)
+            "markets": {
+
+                "btts": round(btts_probability, 3),
+                "over25": round(over25_probability, 3)
 
             },
 
@@ -67,4 +86,5 @@ class PredictionEngine:
                 for (h, a), p in best_scores
 
             ]
+
         }

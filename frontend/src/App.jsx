@@ -1,7 +1,11 @@
+import { useState } from "react";
+
 import SearchPanel from "./components/SearchPanel";
 import ResultsPanel from "./components/ResultsPanel";
 
 function App() {
+  const [prediction, setPrediction] = useState(null);
+
   return (
     <div
       style={{
@@ -56,9 +60,13 @@ function App() {
             alignItems: "start",
           }}
         >
-          <SearchPanel />
+          <SearchPanel
+            onPrediction={setPrediction}
+          />
 
-          <ResultsPanel />
+          <ResultsPanel
+            prediction={prediction}
+          />
         </div>
       </div>
     </div>

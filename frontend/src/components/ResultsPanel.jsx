@@ -1,9 +1,11 @@
 import samplePrediction from "../data/samplePrediction";
 import PredictionSection from "./PredictionSection";
 
-function ResultsPanel() {
+function ResultsPanel({ prediction }) {
+  const data = prediction || samplePrediction;
+
   return (
-    <PredictionSection prediction={samplePrediction} />
+    <PredictionSection prediction={data} />
   );
 }
 
