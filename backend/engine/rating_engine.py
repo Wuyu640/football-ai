@@ -1,91 +1,95 @@
+from __future__ import annotations
+
 from backend.engine.stats_engine import StatsEngine
-from backend.data_engine.team_stats import TeamStats
 
 
 class RatingEngine:
 
     def __init__(self):
-
-        self.team = TeamStats()
         self.stats = StatsEngine()
 
-    def calculate(self, home_id, away_id):
+    def calculate(
+        self,
+        home_team: str,
+        away_team: str,
+        league: str | None = None,
+        season: int | None = None,
+    ):
 
-        home = self.team.get_team(home_id)
-        away = self.team.get_team(away_id)
+        home = self.stats.analyse(
+            team_name=home_team,
+            league=league,
+            season=season,
+        )
 
-        home_stats = self.stats.analyse(home["name"])
-        away_stats = self.stats.analyse(away["name"])
+        away = self.stats.analyse(
+            team_name=away_team,
+            league=league,
+            season=season,
+        )
 
         home_attack = (
-            home_stats["avg_gf"] * 0.45 +
-            home_stats["recent_avg_gf"] * 0.35 +
-            home_stats["home_avg_gf"] * 0.20
+            home["avg_gf"] * 0.45
+            + home["recent_avg_gf"] * 0.35
+            + home["home_avg_gf"] * 0.20
         )
 
         away_attack = (
-            away_stats["avg_gf"] * 0.45 +
-            away_stats["recent_avg_gf"] * 0.35 +
-            away_stats["away_avg_gf"] * 0.20
+            away["avg_gf"] * 0.45
+            + away["recent_avg_gf"] * 0.35
+            + away["away_avg_gf"] * 0.20
         )
 
         home_defense = (
-            (1 / max(home_stats["avg_ga"], 0.1)) * 0.60 +
-            (1 / max(home_stats["recent_avg_ga"], 0.1)) * 0.40
+            (100 - home["avg_ga"] * 25) * 0.6
+            + home["clean_sheet_rate"] * 100 * 0.4
         )
 
         away_defense = (
-            (1 / max(away_stats["avg_ga"], 0.1)) * 0.60 +
-            (1 / max(away_stats["recent_avg_ga"], 0.1)) * 0.40
+            (100 - away["avg_ga"] * 25) * 0.6
+            + away["clean_sheet_rate"] * 100 * 0.4
         )
 
-        home_form = (
-            (home_stats["recent_points"] / 15) * 100
-        )
-
-        away_form = (
-            (away_stats["recent_points"] / 15) * 100
-        )
+        home_form = home["recent_points_per_game"] * 33.33
+        away_form = away["recent_points_per_game"] * 33.33
 
         home_rating = (
-            home_attack * 0.40 +
-            home_defense * 10 * 0.35 +
-            home_form * 0.25
+            home_attack * 0.40
+            + home_defense * 0.35
+            + home_form * 0.25
         )
 
         away_rating = (
-            away_attack * 0.40 +
-            away_defense * 10 * 0.35 +
-            away_form * 0.25
+            away_attack * 0.40
+            + away_defense * 0.35
+            + away_form * 0.25
         )
 
-        if home_rating > away_rating:
-            winner = home["name"]
-        elif away_rating > home_rating:
-            winner = away["name"]
+        difference = round(
+            home_rating - away_rating,
+            2
+        )
+
+        if difference > 2:
+            favourite = home_team
+        elif difference < -2:
+            favourite = away_team
         else:
-            winner = "Draw"
+            favourite = "Draw"
 
         return {
 
-            "home": home["name"],
-            "away": away["name"],
+            "home": home_team,
+            "away": away_team,
 
             "home_rating": round(home_rating, 2),
             "away_rating": round(away_rating, 2),
 
-            "home_attack": round(home_attack, 2),
-            "away_attack": round(away_attack, 2),
+            "difference": difference,
 
-            "home_defense": round(home_defense, 2),
-            "away_defense": round(away_defense, 2),
+            "favorite": favourite,
 
-            "home_form": round(home_form, 2),
-            "away_form": round(away_form, 2),
-
-            "winner": winner,
-
-            "home_stats": home_stats,
-            "away_stats": away_stats
+            "home_stats": home,
+            "away_stats": away,
 
         }

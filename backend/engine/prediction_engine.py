@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from backend.engine.match_analyzer import MatchAnalyzer
 from backend.engine.xg_engine import XGEngine
 from backend.engine.poisson_engine import PoissonEngine
@@ -6,23 +8,30 @@ from backend.engine.poisson_engine import PoissonEngine
 class PredictionEngine:
 
     def __init__(self):
-
         self.analysis = MatchAnalyzer()
         self.xg = XGEngine()
         self.poisson = PoissonEngine()
 
-    def predict(self, home, away):
+    def predict(
+        self,
+        home: str,
+        away: str,
+        league: str | None = None,
+        season: int | None = None,
+    ):
 
-        # Análisis del partido
-        analysis = self.analysis.analyse(home, away)
+        analysis = self.analysis.analyse(
+            home,
+            away,
+            league,
+            season,
+        )
 
-        # xG
         xg = self.xg.calculate(analysis)
 
-        # Matriz de Poisson
         matrix = self.poisson.matrix(
             xg["home_xg"],
-            xg["away_xg"]
+            xg["away_xg"],
         )
 
         home_probability = 0.0
@@ -30,30 +39,48 @@ class PredictionEngine:
         away_probability = 0.0
 
         btts_probability = 0.0
+        over15_probability = 0.0
         over25_probability = 0.0
+        over35_probability = 0.0
 
-        for (home_goals, away_goals), probability in matrix.items():
+        for (hg, ag), probability in matrix.items():
 
-            if home_goals > away_goals:
+            if hg > ag:
                 home_probability += probability
 
-            elif home_goals == away_goals:
+            elif hg == ag:
                 draw_probability += probability
 
             else:
                 away_probability += probability
 
-            if home_goals > 0 and away_goals > 0:
+            goals = hg + ag
+
+            if hg > 0 and ag > 0:
                 btts_probability += probability
 
-            if home_goals + away_goals >= 3:
+            if goals >= 2:
+                over15_probability += probability
+
+            if goals >= 3:
                 over25_probability += probability
 
-        best_scores = sorted(
-            matrix.items(),
-            key=lambda x: x[1],
-            reverse=True
-        )[:10]
+            if goals >= 4:
+                over35_probability += probability
+
+        scores = [
+
+            {
+                "score": f"{h}-{a}",
+                "probability": round(p, 4),
+            }
+
+            for (h, a), p in self.poisson.most_likely_scores(
+                xg["home_xg"],
+                xg["away_xg"],
+            )
+
+        ]
 
         return {
 
@@ -65,26 +92,38 @@ class PredictionEngine:
 
                 "home": round(home_probability, 3),
                 "draw": round(draw_probability, 3),
-                "away": round(away_probability, 3)
+                "away": round(away_probability, 3),
 
             },
 
             "markets": {
 
                 "btts": round(btts_probability, 3),
-                "over25": round(over25_probability, 3)
+
+                "over15": round(over15_probability, 3),
+
+                "over25": round(over25_probability, 3),
+
+                "over35": round(over35_probability, 3),
 
             },
 
-            "scores": [
+            "scores": scores,
+
+            "favorite": max(
 
                 {
-                    "score": f"{h}-{a}",
-                    "probability": round(p, 4)
-                }
+                    "home": home_probability,
+                    "draw": draw_probability,
+                    "away": away_probability,
+                },
 
-                for (h, a), p in best_scores
+                key=lambda x: {
+                    "home": home_probability,
+                    "draw": draw_probability,
+                    "away": away_probability,
+                }[x],
 
-            ]
+            ),
 
         }

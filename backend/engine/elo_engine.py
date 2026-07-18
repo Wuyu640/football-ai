@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from backend.data_engine.league_provider import LeagueProvider
 
 
@@ -8,25 +10,29 @@ class EloEngine:
     HOME_ADVANTAGE = 75
 
     def __init__(self):
-
         self.provider = LeagueProvider()
 
-    def expected(self, elo_a, elo_b):
-
+    @staticmethod
+    def expected(elo_a: float, elo_b: float) -> float:
         return 1 / (1 + 10 ** ((elo_b - elo_a) / 400))
 
-    def calculate(self):
-
-        matches = self.provider.matches()
+    def calculate(
+        self,
+        league: str | None = None,
+        season: int | None = None,
+    ):
 
         ratings = {}
 
-        matches = sorted(
-            matches,
-            key=lambda m: m["utcDate"]
+        matches = self.provider.matches(
+            league=league,
+            season=season,
         )
 
-        for match in matches:
+        for match in sorted(
+            matches,
+            key=lambda m: m["utcDate"],
+        ):
 
             if match["status"] != "FINISHED":
                 continue
@@ -45,27 +51,39 @@ class EloEngine:
 
             expected_home = self.expected(
                 home_elo + self.HOME_ADVANTAGE,
-                away_elo
+                away_elo,
             )
 
             expected_away = 1 - expected_home
 
             if hg > ag:
-
-                score_home = 1
-                score_away = 0
-
-            elif hg == ag:
-
+                score_home = 1.0
+                score_away = 0.0
+            elif hg < ag:
+                score_home = 0.0
+                score_away = 1.0
+            else:
                 score_home = 0.5
                 score_away = 0.5
 
-            else:
+            margin = max(abs(hg - ag), 1)
 
-                score_home = 0
-                score_away = 1
+            k = self.K * (
+                1 + (margin - 1) * 0.25
+            )
 
-            ratings[home] += self.K * (score_home - expected_home)
-            ratings[away] += self.K * (score_away - expected_away)
+            ratings[home] += k * (
+                score_home - expected_home
+            )
 
-        return ratings
+            ratings[away] += k * (
+                score_away - expected_away
+            )
+
+        return dict(
+            sorted(
+                ratings.items(),
+                key=lambda x: x[1],
+                reverse=True,
+            )
+        )

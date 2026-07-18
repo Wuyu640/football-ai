@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from backend.engine.history_engine import HistoryEngine
 
 
@@ -6,15 +8,23 @@ class StatsEngine:
     def __init__(self):
         self.history = HistoryEngine()
 
-    def analyse(self, team_name):
+    def analyse(
+        self,
+        team_name: str,
+        league: str | None = None,
+        season: int | None = None,
+    ):
 
-        matches = self.history.last_matches(team_name, 10)
+        matches = self.history.last_matches(
+            team=team_name,
+            amount=10,
+            league=league,
+            season=season,
+        )
 
         played = 0
 
-        wins = 0
-        draws = 0
-        losses = 0
+        wins = draws = losses = 0
 
         goals_for = 0
         goals_against = 0
@@ -26,30 +36,34 @@ class StatsEngine:
         recent_gf = 0
         recent_ga = 0
 
-        home_gf = 0
-        home_ga = 0
         home_games = 0
-
-        away_gf = 0
-        away_ga = 0
         away_games = 0
+
+        home_gf = home_ga = 0
+        away_gf = away_ga = 0
+
+        home_points = 0
+        away_points = 0
 
         for i, match in enumerate(matches):
 
-            home = match["homeTeam"]["name"] == team_name
+            home = (
+                match["homeTeam"]["name"]
+                == team_name
+            )
 
             home_goals = match["score"]["fullTime"]["home"]
             away_goals = match["score"]["fullTime"]["away"]
 
-            if home_goals is None or away_goals is None:
+            if (
+                home_goals is None
+                or
+                away_goals is None
+            ):
                 continue
 
-            if home:
-                gf = home_goals
-                ga = away_goals
-            else:
-                gf = away_goals
-                ga = home_goals
+            gf = home_goals if home else away_goals
+            ga = away_goals if home else home_goals
 
             played += 1
 
@@ -57,13 +71,16 @@ class StatsEngine:
             goals_against += ga
 
             if home:
+
+                home_games += 1
                 home_gf += gf
                 home_ga += ga
-                home_games += 1
+
             else:
+
+                away_games += 1
                 away_gf += gf
                 away_ga += ga
-                away_games += 1
 
             if ga == 0:
                 clean_sheets += 1
@@ -72,23 +89,38 @@ class StatsEngine:
                 failed_to_score += 1
 
             if gf > ga:
+
                 wins += 1
+
+                if home:
+                    home_points += 3
+                else:
+                    away_points += 3
+
                 if i < 5:
                     recent_points += 3
 
             elif gf == ga:
+
                 draws += 1
+
+                if home:
+                    home_points += 1
+                else:
+                    away_points += 1
+
                 if i < 5:
                     recent_points += 1
 
             else:
+
                 losses += 1
 
             if i < 5:
+
                 recent_gf += gf
                 recent_ga += ga
-
-        if played == 0:
+                if played == 0:
 
             return {
                 "played": 0,
@@ -110,10 +142,15 @@ class StatsEngine:
                 "home_avg_ga": 0,
                 "away_avg_gf": 0,
                 "away_avg_ga": 0,
+                "home_points_per_game": 0,
+                "away_points_per_game": 0,
                 "clean_sheets": 0,
                 "failed_to_score": 0,
                 "clean_sheet_rate": 0,
-                "failed_to_score_rate": 0
+                "failed_to_score_rate": 0,
+                "win_rate": 0,
+                "draw_rate": 0,
+                "loss_rate": 0,
             }
 
         recent_matches = min(played, 5)
@@ -181,6 +218,16 @@ class StatsEngine:
                 2
             ),
 
+            "home_points_per_game": round(
+                home_points / max(home_games, 1),
+                2
+            ),
+
+            "away_points_per_game": round(
+                away_points / max(away_games, 1),
+                2
+            ),
+
             "clean_sheets": clean_sheets,
 
             "failed_to_score": failed_to_score,
@@ -192,6 +239,21 @@ class StatsEngine:
 
             "failed_to_score_rate": round(
                 failed_to_score / played,
+                2
+            ),
+
+            "win_rate": round(
+                wins / played,
+                2
+            ),
+
+            "draw_rate": round(
+                draws / played,
+                2
+            ),
+
+            "loss_rate": round(
+                losses / played,
                 2
             )
 

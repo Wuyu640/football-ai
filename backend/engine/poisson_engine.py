@@ -1,9 +1,20 @@
+from __future__ import annotations
+
 import math
 
 
 class PoissonEngine:
 
-    def probability(self, goals, xg):
+    MAX_GOALS = 6
+
+    @staticmethod
+    def probability(
+        goals: int,
+        xg: float,
+    ) -> float:
+
+        if xg <= 0:
+            return 0.0
 
         return (
             math.exp(-xg)
@@ -11,17 +22,60 @@ class PoissonEngine:
             / math.factorial(goals)
         )
 
-    def matrix(self, home_xg, away_xg):
+    def matrix(
+        self,
+        home_xg: float,
+        away_xg: float,
+    ):
 
-        result = {}
+        matrix = {}
 
-        for home in range(6):
-            for away in range(6):
+        total = 0.0
 
-                result[(home, away)] = (
-                    self.probability(home, home_xg)
-                    *
-                    self.probability(away, away_xg)
+        for home in range(self.MAX_GOALS + 1):
+
+            home_probability = self.probability(
+                home,
+                home_xg,
+            )
+
+            for away in range(self.MAX_GOALS + 1):
+
+                away_probability = self.probability(
+                    away,
+                    away_xg,
                 )
 
-        return result
+                probability = (
+                    home_probability
+                    * away_probability
+                )
+
+                matrix[(home, away)] = probability
+
+                total += probability
+
+        if total > 0:
+
+            for score in matrix:
+                matrix[score] /= total
+
+        return matrix
+
+    def most_likely_scores(
+        self,
+        home_xg: float,
+        away_xg: float,
+        limit: int = 10,
+    ):
+
+        matrix = self.matrix(
+            home_xg,
+            away_xg,
+        )
+
+        return sorted(
+            matrix.items(),
+            key=lambda item: item[1],
+            reverse=True,
+        )[:limit]

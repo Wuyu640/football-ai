@@ -1,30 +1,39 @@
+from __future__ import annotations
+
+
 class ContextEngine:
 
     HOME_ADVANTAGE = 0.18
+    CROWD_ADVANTAGE = 0.10
 
-    def analyse(self, home, away):
+    def analyse(
+        self,
+        home: str,
+        away: str,
+    ):
 
         return {
 
             "home_advantage": self.HOME_ADVANTAGE,
 
-            # Se implementará con calendario
             "travel_penalty": 0.00,
 
-            # Se implementará con competiciones
             "motivation": 0.00,
 
-            # Se implementará con calendario
             "rest_advantage": 0.00,
 
-            # Se implementará con API meteorológica
             "weather": 0.00,
 
-            # Nuevos campos
             "altitude": 0.00,
 
-            "crowd": 0.10,
+            "crowd": self.CROWD_ADVANTAGE,
 
-            "pitch": 0.00
+            "pitch": 0.00,
+
+            "total_context": round(
+                self.HOME_ADVANTAGE
+                + self.CROWD_ADVANTAGE,
+                2,
+            ),
 
         }
